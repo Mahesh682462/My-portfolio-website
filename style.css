@@ -87,6 +87,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .home-img img {
@@ -96,6 +97,8 @@ body {
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    margin-left:5rem;
+    
 }
 
 .home-img img:hover {
@@ -119,7 +122,7 @@ body {
 }
 
 .home-content {
-    margin-left: 5rem;
+    margin-left: 10rem;
 }
 
 .home-content h3 {
