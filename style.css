@@ -33,7 +33,7 @@ body {
 
 
 
-/* Header & NavBar Section */
+/* Header & navbar Section */
 
 .header {
     position: fixed;
@@ -83,17 +83,17 @@ body {
 }
 
 /* Home Section */
+
 .home {
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     
 }
 
 .home-img img {
-   width: 25vw;
     width: 25vw;
-    border: 2px solid var(--main-color);
+    animation: floatImage 4s ease-in-out infinite;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
@@ -121,7 +121,7 @@ body {
 }
 
 .home-content {
-    margin-left: 10rem;
+    margin-left: 5rem;
 }
 
 .home-content h3 {
@@ -185,6 +185,7 @@ span {
 .btn:hover {
     box-shadow: 0 0 1.6rem var(--main-color);
 }
+
 /* About Section */
 
 .about {
@@ -233,6 +234,66 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+
+/*education Section */
+
+.education {
+    background: var(--snd-bg-color);
+}
+.education-box{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.education.heading{
+    margin-bottom: 5rem;
+}
+.education-box img{
+    width: 15rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+.education-item{
+    min-height: 450px;
+    max-width: 450px;
+    background: var(--bg-color);
+    border: .3rem solid var(--bg-color);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 20px 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--text-color);
+    transition: 0.5s ease;
+}
+.education-item:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+.education-item h2{
+    font-size: 4rem;
+}
+.education-item p{
+    font-size: 1.8rem;
+}
+#star{
+    color: gold;
+    font-size: 2rem;
+}
+
+
 
 /* projects Section */
 
